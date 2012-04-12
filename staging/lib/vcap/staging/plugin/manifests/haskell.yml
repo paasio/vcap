@@ -1,0 +1,12 @@
+---
+name: "haskell"
+runtimes:
+  - ghc:
+      version: '7.0.4'
+      description: 'Glasgow Haskell Compiler'
+      executable: runhaskell
+      default: true
+app_servers:
+detection:
+  - "*.cabal": '.'
+staged_services:
